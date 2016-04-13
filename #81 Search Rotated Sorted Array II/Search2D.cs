@@ -1,0 +1,8 @@
+public static bool Search(int[] nums, int target) {
+        for(int i =0; i<nums.Length; i++)
+        {
+            if(nums[i]==target)
+                return true;
+        }
+        return false;
+    }

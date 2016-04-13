@@ -1,0 +1,3 @@
+The idea here is to go through the string. since we know there are 128 ascii characters we can make a hashset, table, bit array, etc. I chose a bit array of 256 to account for an extended ascii encoding. The idea is to go through the string array and check if it exists in our data structure. In my case using the bit array I check if the character is set to true. if so then we use our other pointer i and set the characters leading up to j as false. Otherwise we set the spot to true that a char exists in the bool array. We hold the maxLen of either j-i+1 or maxLen. At the end this is what we return back.
+
+This solution is an O(n) time solution since we go through each character in the string. The space complexity is O(1).

@@ -1,0 +1,1 @@
+After trying a few different solutions this solution ended up being ideal. The idea is to check both even and odd combinations and expand towards the center. The trick in this problem is to have the helper function with the i and j variable. This will allow us to do i-- and j++ to go towards the center. We check that each char is the same forming that palindrome. 

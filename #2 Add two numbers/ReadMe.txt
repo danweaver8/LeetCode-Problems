@@ -1,0 +1,3 @@
+This problem has a few tricky aspects in it. First, we are taking two different linked lists and adding them. We have to make sure we properly add each number and take into account the overflow factor. One good thing the problem did was store the elements in reverse order. The idea is to take each element and add them taking into account the overflow. We check the overflow by taking the sum and dividing by 10. If this is larger than 0 than we know that an overflow has occurred. We next account for the overflow by taking the sum%10 in the next LinkedList node. 
+
+The time complexity is O(n+m) which is O(n). We iterate through all the items in each list. The space complexity is also O(n) since the length at most of the new list would be max(n,m)+1.

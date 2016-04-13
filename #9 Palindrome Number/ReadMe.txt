@@ -1,0 +1,3 @@
+Determine whether an integer is a palindrome. Do this without extra space.
+
+The idea here is we want 2 extra variables to hold the new palindrome and one holding the input to check at the end. We next go through and do what we did in the reverse int problem. palindromeX = palindromeX * 10 + (x % 10); This will give us the reverse of the number. When we return we check if that variable palindromeX == input. That will determine if the int is a palindrome in O(1) space. The time complexity of this problem is O(log n).
